@@ -1,0 +1,40 @@
+html, body{
+    margin: 0;
+}
+
+
+ /* navigation setting */
+
+
+.header-wrapper{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.text-box a { 
+    margin-left: 95px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Shadows Into Light';
+}
+#hide-profile {
+    opacity: 0;
+}
+#appear-profile {
+    opacity: initial;
+    transition: 1s;
+    transform: rotateX(-50%, 50%);
+}
+.text-box h3 {
+    margin: 0;
+}
+
+#logo-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
