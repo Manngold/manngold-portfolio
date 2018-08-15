@@ -80,7 +80,73 @@ article {
     padding-left: 5px;
 }
 
-li h3 {
+li h4 {
     padding: 0px 0px 40px 0px;
     margin: 0;
+    animation-name: poping;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes poping {
+    from {
+        padding-left: 0px;
+    }
+
+    to {
+        padding-left: 5px;
+    }
+}
+
+/* responsive setting */
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+    html,body {
+        margin: 0;
+    }
+    /* header setting */
+    .header-wrapper{
+        text-align: center;
+        vertical-align: middle;
+    }
+    /* article setting */
+    .article-wrapper{
+        margin: 1%;
+    }
+    .article-wrapper h2 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .profile{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #profile-img {
+        width: 320px;
+        height: 400px;
+    }
+    #profile-text{
+        text-align: center;
+    }
+    .middle-text-set{
+        justify-content: center;
+    }
+
+    li h4{
+        animation-name: res-poping;
+    }
+
+    @keyframes res-poping {
+       from{
+           transform: rotate(-5deg);
+       }
+       to{
+           transform: rotate(5deg);
+       }
+    }
 }
