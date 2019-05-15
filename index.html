@@ -11,6 +11,10 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat"
+      rel="stylesheet"
+    />
     <title>Manngold</title>
   </head>
   <body>
@@ -20,8 +24,8 @@
           <img class="logo" src="./image//logo.JPG" alt="Logo" />
           <div class="nav__btn">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Me</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#info">About Me</a></li>
             </ul>
           </div>
           <div class="text__wrapper">
@@ -29,12 +33,23 @@
           </div>
         </div>
       </div>
-      <div class="text__box">
+      <div class="text__box" id="home">
         <p class="text text__effect">
           Hello, I'm Web Developer.
         </p>
+        <a href="#info"><i class="fas fa-angle-double-down"></i></a>
       </div>
-      <div class="info"></div>
+      <div class="info" id="info">
+        <img src="./image/manngold-profile.jpg" alt="profile img" />
+        <div class="info__text">
+          <span>Name: Jang Seo Won</span>
+          <span>Age: 26</span>
+          <span>Like: Beautiful, Creative, Interactive, Simple</span>
+          <span>Now: Likelion 7th, BLE KOREA Researcher</span>
+          <span>E-Mail: jsw4820@gmail.com</span>
+          <span>Mobile: 01082782770</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
