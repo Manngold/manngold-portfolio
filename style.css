@@ -11,10 +11,10 @@ body {
 }
 
 .inner {
+  position: relative;
   width: 100%;
   height: inherit;
-  display: grid;
-  grid-template-columns: 1fr 5fr 2.5fr;
+  display: inline-block;
 }
 
 .inner div {
@@ -28,6 +28,7 @@ body {
   width: 40px;
   margin: 20px 0 0 50px;
   border-radius: 20px;
+  float: left;
 }
 
 .nav__btn ul {
@@ -63,6 +64,10 @@ body {
 
 .nav__btn ul a:last-child {
   margin-left: 20px;
+}
+.text__wrapper {
+  position: absolute;
+  right: 30px;
 }
 
 .header__text {
