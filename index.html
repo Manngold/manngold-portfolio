@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Caveat"
-      rel="stylesheet"
-    />
-    <title>Manngold</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <div class="inner">
-          <img class="logo" src="./image//logo.JPG" alt="Logo" />
-          <div class="nav__btn">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#info">About Me</a></li>
-            </ul>
-          </div>
-          <div class="text__wrapper">
-            <div class="header__text"><strong>CODE</strong> EVERYTHING</div>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            media="(max-width:1080px)"
+            href="./small-style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Caveat"
+            rel="stylesheet"
+        />
+        <title>Manngold</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="inner">
+                    <img class="logo" src="./image//logo.JPG" alt="Logo" />
+                    <div class="nav__btn">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#info">About Me</a></li>
+                            <li><a href="#project">Project</a></li>
+                        </ul>
+                    </div>
+                    <div class="text__wrapper">
+                        <div class="header__text">
+                            <strong>CODE</strong> EVERYTHING
+                        </div>
+                    </div>
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </div>
+            </header>
+            <div class="text__box" id="home">
+                <p class="text text__effect">
+                    Hello, I'm Web Developer.
+                </p>
+                <a href="#info"><i class="fas fa-angle-double-down"></i></a>
+            </div>
+            <div class="info" id="info">
+                <img src="./image/manngold-profile.jpg" alt="profile img" />
+                <ul class="info__text">
+                    <li>Name: Jang Seo Won</li>
+                    <li>Age: 26</li>
+                    <li>Like: Beautiful, Creative, Interactive, Simple</li>
+                    <li>Now: Likelion 7th, BLE KOREA Researcher</li>
+                    <li>E-Mail: jsw4820@gmail.com</li>
+                    <li>Mobile: 010-8278-2770</li>
+                    <li>Skills: HTML, CSS, Javascript, Node.js, Git</li>
+                </ul>
+            </div>
+            <div class="slide-container" id="project">
+                <div class="slides fade show">
+                    <img src="./image/ootd.png" class="my-work" />
+                    <div class="descrption"></div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="./image/players.png" class="my-work" />
+                    <div class="descrption"></div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="./image/what-is-next.jpg" class="my-work" />
+                    <div class="descrption"></div>
+                </div>
+
+                <a class="prev" onclick="prev()">&#10094;</a>
+                <a class="next" onclick="next()">&#10095;</a>
+            </div>
+            <div>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
         </div>
-      </div>
-      <div class="text__box" id="home">
-        <p class="text text__effect">
-          Hello, I'm Web Developer.
-        </p>
-        <a href="#info"><i class="fas fa-angle-double-down"></i></a>
-      </div>
-      <div class="info" id="info">
-        <img src="./image/manngold-profile.jpg" alt="profile img" />
-        <div class="info__text">
-          <span>Name: Jang Seo Won</span>
-          <span>Age: 26</span>
-          <span>Like: Beautiful, Creative, Interactive, Simple</span>
-          <span>Now: Likelion 7th, BLE KOREA Researcher</span>
-          <span>E-Mail: jsw4820@gmail.com</span>
-          <span>Mobile: 01082782770</span>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
+<script src="./index.js"></script>

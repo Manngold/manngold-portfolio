@@ -1,80 +1,84 @@
 html,
 body {
-  scroll-behavior: smooth;
-  margin: 0;
+    scroll-behavior: smooth;
+    margin: 0;
 }
 
 /* Header Setting */
 .header {
-  width: 100%;
-  height: 80px;
-  background-color: #212121;
-  position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #212121;
+    position: fixed;
 }
 
 .inner {
-  position: relative;
-  width: 100%;
-  height: inherit;
-  display: inline-block;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    display: inline-block;
 }
 
 .inner div {
-  display: inline-block;
-  padding-top: 14px;
-  padding-left: 20px;
+    display: inline-block;
+    padding-top: 14px;
+    padding-left: 20px;
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
-  margin: 20px 0 0 50px;
-  border-radius: 20px;
-  float: left;
+    height: 40px;
+    width: 40px;
+    margin: 20px 0 0 50px;
+    border-radius: 20px;
+    float: left;
 }
 
 .nav__btn ul {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
 .nav__btn ul li {
-  list-style: none;
-  display: inline-block;
-  font-size: 26px;
-  font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .nav__btn a {
-  text-decoration: none;
-  color: #fefefe;
+    text-decoration: none;
+    color: #fefefe;
 }
 
 .nav__btn a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  margin-left: 19px;
-  background: #fefefe;
-  transition: width 0.3s;
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-left: 19px;
+    background: #fefefe;
+    transition: width 0.3s;
 }
 
 .nav__btn a:hover::after {
-  width: 82%;
-  transition: width 0.3s;
+    width: 85%;
+    transition: width 0.3s;
 }
 
 .nav__btn ul a:last-child {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 .text__wrapper {
-  position: absolute;
-  right: 30px;
+    position: absolute;
+    right: 30px;
 }
 
 .header__text {
-  color: #fefefe;
-  font-size: 30px;
+    color: #fefefe;
+    font-size: 30px;
+}
+
+#menu-icon {
+    display: none;
 }
 
 /* Header Setting End*/
@@ -82,73 +86,125 @@ body {
 /*Body Setting */
 
 .text__box {
-  height: 100vh;
-  width: 100%;
-  background-color: #212121;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .text {
-  color: #fefefe;
-  text-align: center;
-  font-size: 80px;
-  font-weight: bold;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #fefefe;
+    color: #fefefe;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #fefefe;
 }
 
 .text__effect {
-  animation: typewriter 2s steps(30) 1s 1 normal both,
-    blinkTextCursor 800ms steps(40) infinite normal;
+    animation: typewriter 2s steps(30) 1s 1 normal both,
+        blinkTextCursor 800ms steps(40) infinite normal;
 }
 
 @keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 11.7em;
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 11.7em;
+    }
 }
 
 @keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .text__box i {
-  color: #fefefe;
-  font-size: 40px;
+    color: #fefefe;
+    font-size: 40px;
 }
 
 .info {
-  width: 100%;
-  height: calc(100vh - 80px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info img {
-  width: 450px;
-  height: 500px;
+    width: 450px;
+    height: 500px;
 }
 
 .info__text {
-  height: 500px;
+    height: 500px;
 }
 
-.info__text span {
-  display: block;
-  font-size: 2rem;
-  margin-top: 4%;
-  font-family: "Caveat", cursive;
+.info__text li {
+    display: block;
+    font-size: 2rem;
+    margin-top: 4%;
+    font-family: "Caveat", cursive;
+    letter-spacing: 1px;
+}
+
+/* project css */
+
+.slide-container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slides > img {
+    width: 100%;
+}
+
+.fade {
+    display: none;
+}
+
+.show {
+    display: block;
+    transition: 0.4s;
+}
+
+.prev,
+.next {
+    font-size: 40px;
+    position: absolute;
+    background-color: #212121;
+    opacity: 0.8;
+    color: #fefefe;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }

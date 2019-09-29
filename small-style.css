@@ -1,0 +1,45 @@
+.inner {
+    position: relative;
+}
+
+.inner > .text__wrapper {
+    padding: 0;
+    margin: 0;
+    top: 30%;
+    right: 33%;
+
+    position: absolute;
+}
+
+.text__wrapper > .header__text {
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    padding: 0;
+    margin: 0;
+}
+.nav__btn > ul {
+    display: none;
+}
+
+#menu-icon {
+    display: initial;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 40px;
+    color: #fefefe;
+}
+
+.text {
+    font-size: 30px;
+}
+
+.info {
+    flex-direction: column;
+    height: fit-content;
+}
