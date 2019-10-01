@@ -25,17 +25,34 @@
     </head>
     <body>
         <div class="wrapper">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#home" onclick="moveContent()">Home</a></li>
+                    <li>
+                        <a href="#info" onclick="moveContent()">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#project" onclick="moveContent()">Project</a>
+                    </li>
+                </ul>
+            </div>
             <header class="header">
                 <div class="inner">
                     <img class="logo" src="./image//logo.JPG" alt="Logo" />
                     <div class="nav__btn">
                         <ul>
-                            <li><a onclick="moveContent(HOME)">Home</a></li>
                             <li>
-                                <a onclick="moveContent(ABOUT_ME)">About Me</a>
+                                <a href="#home" onclick="moveContent()">Home</a>
                             </li>
                             <li>
-                                <a onclick="moveContent(PROJECT)">Project</a>
+                                <a href="#info" onclick="moveContent()"
+                                    >About Me</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#project" onclick="moveContent()"
+                                    >Project</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -43,7 +60,9 @@
                     <div class="header__text">
                         <strong>CODE</strong> EVERYTHING
                     </div>
-                    <i class="fas fa-bars" id="menu-icon"></i>
+                    <a onclick="showSidebar()"
+                        ><i class="fas fa-bars" id="menu-icon"></i
+                    ></a>
                 </div>
             </header>
             <div class="text__box" id="home">

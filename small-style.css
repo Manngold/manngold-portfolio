@@ -1,3 +1,25 @@
+.sidebar ul li {
+    list-style: none;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+.sidebar a {
+    color: #fefefe;
+}
+.sidebarShow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
 .inner {
     position: relative;
 }
@@ -36,6 +58,11 @@
 
 .text {
     font-size: 30px;
+}
+
+.info img {
+    width: 90%;
+    height: 90%;
 }
 
 .info {

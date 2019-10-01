@@ -1,12 +1,17 @@
 HOME = document.querySelector("#home");
-ABOUT_ME = document.querySelector("#info");
-PROJECT = document.querySelector("#project");
+
+SIDEBAR = document.querySelector(".sidebar");
 
 slides = document.querySelectorAll(".my-work");
 index = 0;
 
-function moveContent(dest) {
-    dest.scrollIntoView();
+function showSidebar() {
+    HOME.scrollIntoView();
+    SIDEBAR.classList.add("sidebarShow");
+}
+
+function moveContent() {
+    SIDEBAR.classList.remove("sidebarShow");
 }
 
 function prev() {
