@@ -49,7 +49,6 @@ a {
 }
 
 .nav__btn a {
-    text-decoration: none;
     color: #fefefe;
 }
 
@@ -254,8 +253,6 @@ a {
     left: 10%;
     top: 50%;
     font-size: 20px;
-    text-decoration: none;
-    color: #212121;
 }
 .description > a > i {
     font-size: 30px;
