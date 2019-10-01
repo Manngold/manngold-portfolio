@@ -43,3 +43,16 @@
     flex-direction: column;
     height: fit-content;
 }
+
+.des__title,
+.description > a > i {
+    font-size: 25px;
+}
+.des__comment,
+.description > a {
+    font-size: 18px;
+}
+
+.description > a {
+    top: 60%;
+}
