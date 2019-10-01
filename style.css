@@ -3,6 +3,9 @@ body {
     scroll-behavior: smooth;
     margin: 0;
 }
+a {
+    cursor: pointer;
+}
 
 /* Header Setting */
 .header {
@@ -152,7 +155,7 @@ body {
 
 .info__text li {
     display: block;
-    font-size: 2rem;
+    font-size: 30px;
     margin-top: 4%;
     font-family: "Caveat", cursive;
     letter-spacing: 1px;
@@ -170,6 +173,7 @@ body {
 
 .slides > img {
     width: 100%;
+    height: calc(100vh - 80px);
 }
 
 .fade {
@@ -178,6 +182,7 @@ body {
 
 .show {
     display: block;
+    position: absolute;
     transition: 0.4s;
 }
 
@@ -199,6 +204,8 @@ body {
 .next:hover {
     opacity: 1;
     transition: 0.5s;
+    padding: 5px;
+    font-size: 45px;
 }
 
 .prev {
@@ -207,4 +214,49 @@ body {
 
 .next {
     right: 10px;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fefefe;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.show:hover .description {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.des__title {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 30px;
+    color: #212121;
+}
+
+.des__comment {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: 20px;
+    line-height: 160%;
+}
+.description > a {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #212121;
+}
+.description > a > i {
+    font-size: 30px;
 }

@@ -1,5 +1,13 @@
-index = 0;
+HOME = document.querySelector("#home");
+ABOUT_ME = document.querySelector("#info");
+PROJECT = document.querySelector("#project");
+
 slides = document.querySelectorAll(".my-work");
+index = 0;
+
+function moveContent(dest) {
+    dest.scrollIntoView();
+}
 
 function prev() {
     slides[index].parentElement.classList.remove("show");

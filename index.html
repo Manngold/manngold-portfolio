@@ -29,9 +29,13 @@
                     <img class="logo" src="./image//logo.JPG" alt="Logo" />
                     <div class="nav__btn">
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#info">About Me</a></li>
-                            <li><a href="#project">Project</a></li>
+                            <li><a onclick="moveContent(HOME)">Home</a></li>
+                            <li>
+                                <a onclick="moveContent(ABOUT_ME)">About Me</a>
+                            </li>
+                            <li>
+                                <a onclick="moveContent(PROJECT)">Project</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="text__wrapper">
@@ -46,7 +50,11 @@
                 <p class="text text__effect">
                     Hello, I'm Web Developer.
                 </p>
-                <a href="#info"><i class="fas fa-angle-double-down"></i></a>
+
+                <i
+                    class="fas fa-angle-double-down"
+                    onclick="moveContent(ABOUT_ME)"
+                ></i>
             </div>
             <div class="info" id="info">
                 <img src="./image/manngold-profile.jpg" alt="profile img" />
@@ -63,26 +71,60 @@
             <div class="slide-container" id="project">
                 <div class="slides fade show">
                     <img src="./image/ootd.png" class="my-work" />
-                    <div class="descrption"></div>
+                    <div class="description">
+                        <h3 class="des__title">OOTD</h3>
+                        <p class="des__comment">
+                            멋쟁이 사자처럼 천안지역 연합 해커톤에서 진행한
+                            프로젝트입니다 <br />
+                            HTML, CSS를 활용한 View와 Js를 활용하여 Weather
+                            API로 사용자의 위치에 따른 날씨 정보를 가져왔습니다.
+                            <br />
+                            처음으로 다른 포지션의 개발자들과 협업을 해서 좋은
+                            경험을 했습니다. <br />
+                        </p>
+                        <a href="https://immense-cliffs-72740.herokuapp.com/"
+                            ><i class="fas fa-link"></i> Link
+                        </a>
+                    </div>
                 </div>
 
                 <div class="slides fade">
                     <img src="./image/players.png" class="my-work" />
-                    <div class="descrption"></div>
+                    <div class="description">
+                        <h3 class="des__title">Players</h3>
+                        <p class="des__comment">
+                            멋쟁이 사자처럼 전국 대학 해커톤에서 진행한 운동
+                            파트너 매칭 서비스 프로젝트입니다 <br />
+
+                            <br />
+                            Front-End에 관한 작업만 하다 Node.js를 활용하여
+                            Back-End 작업에 도전을 해본 의미있는 프로젝트입니다.
+                            <br />
+                        </p>
+                        <a href="https://github.com/dkuplayers/players"
+                            ><i class="fab fa-github"></i> Github Link</a
+                        >
+                    </div>
                 </div>
 
                 <div class="slides fade">
-                    <img src="./image/what-is-next.jpg" class="my-work" />
-                    <div class="descrption"></div>
+                    <img src="./image/ithings.png" class="my-work" />
+                    <div class="description">
+                        <h3 class="des__title">iThings Lab</h3>
+                        <p class="des__comment">
+                            현재 제가 소속되어 있는 단국대학교 사물인터넷
+                            연구실의 웹페이지입니다. <br />
+                            유지보수를 하고 있으며, 현재 홈페이지 리뉴얼을
+                            위하여 전체적으로 작업을 진행중입니다.
+                        </p>
+                        <a href="http://www.ithingslab.com/"
+                            ><i class="fas fa-link"></i> Link
+                        </a>
+                    </div>
                 </div>
 
                 <a class="prev" onclick="prev()">&#10094;</a>
                 <a class="next" onclick="next()">&#10095;</a>
-            </div>
-            <div>
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
             </div>
         </div>
     </body>
