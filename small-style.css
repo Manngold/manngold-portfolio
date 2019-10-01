@@ -10,9 +10,8 @@
 
     position: absolute;
 }
-
-.text__wrapper > .header__text {
-    padding: 0;
+.header__text {
+    left: 33%;
 }
 
 .logo {
