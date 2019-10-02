@@ -26,6 +26,66 @@
     height: 50vh;
 }
 
+.mobile__title--show {
+    display: block;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.tap__wrapper {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    margin-left: 20px;
+    animation: upAndDown 1s infinite;
+}
+
+@keyframes upAndDown {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 3px;
+    }
+    50% {
+        top: 5px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+.tap-guide {
+    font-size: 10px;
+}
+
+.tap__wrapper > i {
+    transform: rotate(180deg);
+    margin-left: 14px;
+    font-size: 15px;
+}
+
+.prev,
+.next {
+    font-size: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+    transition: 0.5s;
+    width: 22px;
+    font-size: 22px;
+}
+
 .des__title,
 .description > a > i {
     font-size: 15px;

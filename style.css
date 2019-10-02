@@ -173,6 +173,10 @@ a {
     position: relative;
 }
 
+.mobile__title--show {
+    display: none;
+}
+
 .slides > img {
     width: 100%;
     height: calc(100vh - 80px);
