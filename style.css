@@ -181,6 +181,11 @@ a {
     width: 100%;
     height: calc(100vh - 80px);
 }
+.slides > .app__device {
+    float: right;
+    width: 50%;
+    height: calc(100vh - 80px);
+}
 
 .fade {
     display: none;
@@ -222,7 +227,7 @@ a {
     right: 10px;
 }
 
-.description {
+.slides:last-of-type > .description {
     position: absolute;
     top: 0;
     bottom: 0;
