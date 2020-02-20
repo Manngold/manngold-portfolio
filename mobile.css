@@ -86,6 +86,11 @@
     font-size: 22px;
 }
 
+.slides > .app__device {
+    padding-top: 50px;
+    height: 100%;
+}
+
 .des__title,
 .description > a > i {
     font-size: 15px;
