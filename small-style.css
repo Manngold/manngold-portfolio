@@ -74,6 +74,25 @@
     width: 100%;
     height: calc(100vh - 80px);
 }
+
+.slides > .description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fefefe;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.show:hover .description {
+    visibility: visible;
+    opacity: 0.9;
+}
+
 .des__title,
 .description > a > i {
     font-size: 25px;
